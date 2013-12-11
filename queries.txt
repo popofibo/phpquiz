@@ -1,0 +1,17 @@
+mysql> create database Intelliquiz1;
+Query OK, 1 row affected (0.27 sec)
+
+mysql> use Intelliquiz;
+ERROR 1049 (42000): Unknown database 'intelliquiz'
+mysql> use Intelliquiz1;
+Database changed
+mysql> create table user_info (
+    -> user_gpn varchar(20),
+    -> user_fullname varchar(40),
+    -> user_noofques varchar(2),
+    -> user_percent varchar(3),
+    -> user_timestamp DATETIME,
+    -> user_hostname varchar(20),
+    -> PRIMARY KEY (user_gpn)
+    -> );
+Query OK, 0 rows affected (0.82 sec)
